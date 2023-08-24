@@ -4,6 +4,7 @@ import * as Collapsible from '@radix-ui/react-collapsible'
 import { Cog, LifeBuoy, Menu, Search } from 'lucide-react'
 import { Button } from '../Button'
 import * as Input from '../Input'
+import { ThemeSwitch } from '../ThemeSwitch'
 import { Logo } from './Logo'
 import { MainNavigation } from './MainNavigation'
 import { NavItem } from './MainNavigation/NavItem'
@@ -36,6 +37,8 @@ export function Sidebar() {
         <MainNavigation />
 
         <div className="mt-auto flex flex-col gap-6">
+          <ThemeSwitch />
+
           <nav className="space-y-0.5">
             <NavItem title="Support" icon={LifeBuoy} />
             <NavItem title="Settings" icon={Cog} />
